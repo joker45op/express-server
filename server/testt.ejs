@@ -1,0 +1,118 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card Generator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #card-container {
+        padding: 10px;
+        background-image: url("./base.jpeg");
+        background-repeat: no-repeat;
+        width: 662px;
+        height: 1028px;
+        background-size: cover;
+      }
+      #name {
+        position: relative;
+        color: white;
+        top: 52.8%;
+        font-size: 45px;
+        font-weight: 900;
+        max-width: 92.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #under {
+        position: relative;
+        top: 55%;
+        display: flex;
+        max-width: 92.5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 26px;
+        font-weight: 900;
+        padding: 5px 10px;
+        list-style: none;
+        line-height: 150%;
+        min-height: 35%;
+        max-height: 35%;
+      }
+      #uLeft {
+        min-width: 23%;
+        max-width: 23%;
+        list-style: none;
+      }
+
+      #uRight {
+        min-width: calc(100%-23%);
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      #address {
+        position: relative;
+        font-size: 19px;
+        font-weight: 900;
+        max-width: 70%;
+        max-height: 55%;
+        overflow: hidden;
+        line-height: 110%;
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body style="background-color: aqua;">
+    <div id="card-container">
+        <p><%= tagline %></p>
+      <h2 id="Name">Jagdish Gadhvi</h2>
+      <div id="under">
+        <div id="uLeft">
+          <ul>
+            <li>Father</li>
+            <li>G.R</li>
+            <li>D.O.B.</li>
+            <li>Contact</li>
+            <li>Address</li>
+          </ul>
+        </div>
+        <div id="uMid">
+          <ul>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+          </ul>
+        </div>
+        <div id="uRight">
+          <ul>
+            <li>Amrutbhai Gadhvi</li>
+            <li>2444</li>
+            <li>12-Dec-2004</li>
+            <li>1234567890</li>
+            <li id="address">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. t
+              consectetur adipisicing elit. t consectetur adipisicing elit. t
+              consectetur adipisicing elit. t consectetur adipisicing elit. t
+              consectetur adipisicing elit. Harum, ratione?
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

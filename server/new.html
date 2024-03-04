@@ -1,0 +1,150 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Card Generator</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #card-container {
+        padding: 10px;
+        background-image: url("./base.jpeg");
+        background-repeat: no-repeat;
+        width: 211px;
+        height: 329px;
+        background-size: cover;
+      }
+      #name {
+        /* color: white; */
+        position: relative;
+        /* border: 1px solid; */
+        top: 410px;
+        font-size: 45px;
+        font-weight: 900;
+        max-width: 590px;
+        min-width: 590px;
+        left: 24.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: -webkit-center;
+      }
+      #under {
+        position: relative;
+        top: 405px;
+        display: flex;
+        max-width: 550px;
+        min-width: 550px;
+        left: 24.5px;
+        max-height: 35px;
+        display: -webkit-box;
+        -webkit-box-pack: justify;
+        font-size: 26px;
+        font-weight: 900;
+        padding: 5px 10px;
+        list-style: none;
+        line-height: 50px;
+        min-height: 35px;
+      }
+      #uLeft {
+        height: 370px;
+        position: relative;
+        min-width: 120px;
+        max-width: 120px;
+        min-height: 370px;
+        max-height: 370px;
+        list-style: none;
+        /* border: 1px solid; */
+        /* overflow: hidden; */
+      }
+      #uMid {
+        /* border: 1px solid; */
+        min-height: 370px;
+        max-height: 370px;
+        min-width: 15px;
+        max-width: 15px;
+        height: 370px;
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+      }
+      #uRight {
+        /* border: 1px solid; */
+        position: relative;
+        left: 0px;
+        min-width: 430px;
+        max-width: 430px;
+        height: 370px;
+        min-height: 370px;
+        max-height: 370px;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      #address {
+        /* border: 1px solid; */
+        position: relative;
+        font-size: 19px;
+        font-weight: 900;
+        min-width: 310px;
+        max-width: 310px;
+        max-height: 160px;
+        /* overflow: hidden; */
+        line-height: 19px;
+        font-size: 15px;
+      }
+      #photo {
+        position: relative;
+        top: 400px;
+        left: 230px;
+        border: 1px solid;
+        min-width: 150px;
+        max-width: 150px;
+        min-height: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="card-container">
+      <div id="photo">
+        <img src="./image.jpg" alt="" srcset="" />
+      </div>
+      <h2 id="Name">Abhishek adss</h2>
+      <div id="under">
+        <div id="uLeft">
+          <ul style="list-style: none">
+            <li>Father</li>
+            <li>G.R</li>
+            <li>D.O.B.</li>
+            <li>Contact</li>
+            <li>Address</li>
+          </ul>
+        </div>
+        <div id="uMid">
+          <ul style="list-style: none">
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+            <li>:</li>
+          </ul>
+        </div>
+        <div id="uRight">
+          <ul style="list-style: none">
+            <li>S</li>
+            <li>7053</li>
+            <li>17-05-2004</li>
+            <li>7046884282</li>
+            <li id="address">sdfg hjkluyt fgafifjsj dvio andnf ijn89 4fnja v8awnaik</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
